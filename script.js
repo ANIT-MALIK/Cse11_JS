@@ -25,3 +25,26 @@ if(sym1==sym2){
 else{
     console.log("false")
 }
+
+//loop
+for (var i=0;i<10;i++){
+    document.write("Current count: "+ i);
+    document.write("<br/>");
+}
+document.write("loop stopped<br>");
+
+var grade ="a";
+document.write("entering switch block<br/>");
+switch(grade){
+    case "a":document.write("good job");
+    break;
+    case "b":document.write("pretty good");
+    break;
+    case "c":document.write("do better");
+    break;
+    default:document.write("fail");
+}
+
+function myFunction(){
+    alert("hello world!");
+}
