@@ -48,3 +48,12 @@ switch(grade){
 function myFunction(){
     alert("hello world!");
 }
+
+function myFunction(){
+    document.getElementsById("demo").setAttribute("class","democlass");
+}
+
+function onClick()
+{
+    console.log("clicked");
+}
