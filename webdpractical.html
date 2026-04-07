@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical ST 1</title>
+    <link rel="stylesheet" href="webdstyle.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Grade Calculator</h2>
+
+    <input type="number" id="sub1" placeholder="Subject 1"><br>
+    <input type="number" id="sub2" placeholder="Subject 2"><br>
+    <input type="number" id="sub3" placeholder="Subject 3"><br>
+    <input type="number" id="sub4" placeholder="Subject 4"><br>
+    <input type="number" id="sub5" placeholder="Subject 5"><br>
+
+    <button onclick="calculateGrade()">Calculate</button>
+
+    <div id="result"></div>
+    <div id="feedback"></div>
+
+    <div class="graph">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+        <div class="bar" id="bar4"></div>
+        <div class="bar" id="bar5"></div>
+    </div>
+</div>
+
+<script src="webdscript.js"></script>
+
+</body>
+</html>
