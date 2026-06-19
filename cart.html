@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cart - Amazon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="logo">amazon</div>
+  <a href="index.html" style="color:white;">Back</a>
+</header>
+
+<h2 style="padding:20px;">Your Cart</h2>
+
+<div id="cart-items" style="padding:20px;"></div>
+
+<h3 id="total" style="padding:20px;"></h3>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let html = "";
+let total = 0;
+
+for (let i = 0; i < cart.length; i++) {
+  html += `
+    <div style="background:white;padding:10px;margin:10px;border-radius:8px;">
+      ${cart[i].name} - ₹${cart[i].price}
+    </div>
+  `;
+  total += cart[i].price;
+}
+
+document.getElementById("cart-items").innerHTML = html;
+document.getElementById("total").innerText = "Total: ₹" + total;
+</script>
+
+</body>
+</html>
